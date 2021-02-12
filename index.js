@@ -32,6 +32,22 @@ fs.readdir("./commands/", (err, files) => {
     console.log("Loading Command: "+commandName)
   });
 });
+client.on('message', msg=>{
+  if(msg.content === '*embed'){
+    
+    let embed = new MessageEmbed()
+    .setAuthor (`IZ*ONEkkoya`)
+    .setTitle('Friendly Reminder / Sekedar Mengingatkan')
+    .setImage("https://data.whicdn.com/images/335062504/original.gif")
+    .setDescription(`:flag_gb: | Annyeonghaseyo Wijeuwon! Just a friendly reminder, let's donate for the online concert stream!
+
+    :flag_id: | Annyeonghaseyo Wijeuwon! Sekedar mengingatkan, skuy donasi untuk streaming konser online!`)
+    .setColor('BLUE')
+    .setFooter(client.user.username, client.user.displayAvatarURL())
+    .setTimestamp();
+    msg.channel.send(embed)
+  }
+})
 
 //Logging in to discord
 client.login(process.env.TOKEN)
