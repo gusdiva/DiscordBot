@@ -17,7 +17,7 @@ module.exports = {
           }
     
             const Embed = new MessageEmbed()
-            .setAuthor("Join Voice Channel", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
+            .setAuthor("Join Voice Channel", "https://cdn.discordapp.com/attachments/817409484971573340/817409539342204999/ezgif.com-gif-maker_18.gif")
             .setColor("GREEN")
             .setTitle("Success")
             .setDescription("🎶 Join The Voice Channel.")
