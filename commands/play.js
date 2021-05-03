@@ -101,7 +101,7 @@ module.exports = {
        if (!afk[message.guild.id]) afk[message.guild.id] = {
         afk: false,
     };
-    /*var online = afk[message.guild.id]
+    var online = afk[message.guild.id]
     if (!song){
       if (!online.afk) {
         sendError("Leaving the voice channel because I think there are no songs in the queue. If you like the bot stay 24/7 in voice channel run `*afk`\n", message.channel)
@@ -109,7 +109,7 @@ module.exports = {
         message.client.queue.delete(message.guild.id);
       }
             return message.client.queue.delete(message.guild.id);
-}*/
+}
  let stream = null; 
     if (song.url.includes("youtube.com")) {
       
